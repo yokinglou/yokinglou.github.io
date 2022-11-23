@@ -17,12 +17,12 @@ Publications
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/crin.png' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle> CRIN: Rotation-Invariant Point Cloud Analysis and Rotation Estimation via Centrifugal Reference Frame
               </papertitle>
               <br>
@@ -34,12 +34,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/canonical.jpg' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle> Canonical Voting: Towards Robust Oriented Bounding Box Detection in 3D Scenes
               </papertitle>
               <br>
@@ -52,12 +52,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/sprin.jpg' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle> PRIN/SPRIN: On Extracting Point-wise Rotation Invariant Features
               </papertitle>
               <br>
@@ -70,12 +70,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/localization.png' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle>Localization with Sampling-Argmax
               </papertitle>
               <br>
@@ -90,12 +90,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/Under.png' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle>Understanding Pixel-level 2D Image Semantics
                 with 3D Keypoint Knowledge Engine</papertitle>
               <br>
@@ -108,12 +108,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <img src='/figs/cpnet.png' width="160">
               </div>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
               <papertitle>Human Correspondence Consensus for 3D Object Semantic Understanding</papertitle>
               <br>
               <strong>Yujing Lou*</strong>, Yang You*, Chengkun Li*, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Weiming Wang, Cewu Lu (*=equal contribution)
@@ -127,12 +127,12 @@ Publications
             </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <img src='/figs/kpnet.png' width="160">
         </div>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
         <papertitle>KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human Annotations</papertitle>
         <br>
         Yang You, <strong>Yujing Lou</strong>, Chengkun Li, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Cewu Lu, Weiming Wang
@@ -145,12 +145,12 @@ Publications
         </td>
     </tr> 
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <img src='/figs/prin.png' width="160">
         </div>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
         <papertitle>Pointwise Rotation-invariant Network with Adaptive Sampling and 3D Spherical Voxel Convolution</papertitle>
         <br>
         Yang You*, <strong>Yujing Lou</strong>*, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Cewu Lu, Weiming Wang (*=equal contribution) 
