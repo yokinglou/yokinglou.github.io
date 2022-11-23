@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Yujing Lou"
   avatar           : "yoking.jpg"
-  bio              : "Ph.D. candidate at Shanghai Jiao Tong University"
+  bio              : "Ph.D. candidate at\nShanghai Jiao Tong University\nlouyujing[at]sjtu[dot]edu[dot]cn"
   location         : "Shanghai, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=3o62JHIAAAAJ&hl=en"
-  email            : "louyujing[at]sjtu[dot]edu[dot]cn"
+  email            : #"louyujing[at]sjtu[dot]edu[dot]cn"
   researchgate     : "https://www.researchgate.net/profile/Yujing-Lou" # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/yokinglou"
+  github           : "yokinglou"
   google_plus      :
   keybase          :
   instagram        :
