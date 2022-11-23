@@ -66,13 +66,25 @@ Education
 
 Work experience
 ======
-* Summer 2017: Research Intern
-  * **National University of Singapore**
-  * Supervisor: Prof. SOO Yuen Jien
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<tbody>
+  <tr>
+    <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
+      <img src="/figs/smartmore.jpg" width="140">
+    </td>
+    <td style="border:0px" width="75%" valign="center">
+      <strong>SmartMore</strong>
+      <br><br>
+      <strong>Jan. 2022 - Present</strong>
+      <br>
+      Research Intern
+      <br>
+      Supervisor: Nianjuan Jiang
+    </td>
+  </tr>
+</tbody>
+</table>
 
-* 2022.01-Present: Research Intern
-  * **SmartMore**
-  * Supervisor: Dr. Nianjuan Jiang
 
 Honors and Awards
 ======
