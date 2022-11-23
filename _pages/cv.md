@@ -9,10 +9,7 @@ redirect_from:
 
 <!-- {% include base_path %} -->
 
-<br>
-
-Education
-======
+## Education
 ---
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 <tbody>
@@ -67,8 +64,7 @@ Education
 </tbody>
 </table>
 
-Work experience
-======
+## Work experience
 ---
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 <tbody>
@@ -90,8 +86,7 @@ Work experience
 </table>
 
 
-Honors and Awards
-======
+## Honors and Awards
 ---
   * Top 10 Graduates of Honors School (10 in 230) • 2018
   * China National Scholarship, Ministry of Education of P.R. China • 2017
