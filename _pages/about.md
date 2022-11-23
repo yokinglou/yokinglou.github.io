@@ -13,118 +13,128 @@ I am a second-year Ph.D. student in the [Department of Computer Science and Engi
 
 Publications
 ======
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/crin.png' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle> CRIN: Rotation-Invariant Point Cloud Analysis and Rotation Estimation via Centrifugal Reference Frame
-              </papertitle>
-              <br>
-              <strong>Yujing Lou</strong>, Zelin Ye, Yang You, Nianjuan Jiang, Jiangbo Lu, Weiming Wang, Lizhuang Ma, Cewu Lu
-              <br>
-              <br>
-              <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023</strong>
-              <br>
-            </td>
+        <div class="one">
+          <img src='/figs/crin.png' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle> 
+          <strong>CRIN: Rotation-Invariant Point Cloud Analysis and Rotation Estimation via Centrifugal Reference Frame</strong>
+        </papertitle>
+        <br>
+        <strong>Yujing Lou</strong>, Zelin Ye, Yang You, Nianjuan Jiang, Jiangbo Lu, Weiming Wang, Lizhuang Ma, Cewu Lu
+        <br>
+        <br>
+        <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023</strong>
+        <br>
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/canonical.jpg' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle> Canonical Voting: Towards Robust Oriented Bounding Box Detection in 3D Scenes
-              </papertitle>
-              <br>
-              Yang You, Zelin Ye, <strong>Yujing Lou</strong>, Chengkun Li, Yong-Lu Li, Lizhuang Ma, Weiming Wang, Cewu Lu
-              <br>
-              <br>
-              <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</strong>
-              <br>
-              [<a href="https://arxiv.org/abs/2011.12001">arXiv</a>] [<a href="https://github.com/qq456cvb/CanonicalVoting">code</a>]
-            </td>
+        <div class="one">
+          <img src='/figs/canonical.jpg' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle> 
+          <strong> Canonical Voting: Towards Robust Oriented Bounding Box Detection in 3D Scenes </strong> 
+        </papertitle>
+        <br>
+        Yang You, Zelin Ye, <strong>Yujing Lou</strong>, Chengkun Li, Yong-Lu Li, Lizhuang Ma, Weiming Wang, Cewu Lu
+        <br>
+        <br>
+        <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</strong>
+        <br>
+        [<a href="https://arxiv.org/abs/2011.12001">arXiv</a>] 
+        [<a href="https://github.com/qq456cvb/CanonicalVoting">code</a>]
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/sprin.jpg' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle> PRIN/SPRIN: On Extracting Point-wise Rotation Invariant Features
-              </papertitle>
-              <br>
-              Yang You, <strong>Yujing Lou</strong>, Ruoxi Shi, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Weiming Wang, Cewu Lu
-              <br>
-              <br>
-              <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021</strong>
-              <br>
-              [<a href="https://arxiv.org/abs/2102.12093">arXiv</a>]
-            </td>
+        <div class="one">
+          <img src='/figs/sprin.jpg' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle> 
+          <strong> PRIN/SPRIN: On Extracting Point-wise Rotation Invariant Features </strong>
+        </papertitle>
+        <br>
+          Yang You, <strong>Yujing Lou</strong>, Ruoxi Shi, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Weiming Wang, Cewu Lu
+        <br>
+        <br>
+          <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021</strong>
+        <br>
+          [<a href="https://arxiv.org/abs/2102.12093">arXiv</a>]
+          [<a href="https://ieeexplore.ieee.org/document/9627565">paper</a>]
+          [<a href="https://github.com/qq456cvb/SPRIN">code</a>]
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/localization.png' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Localization with Sampling-Argmax
-              </papertitle>
-              <br>
-              Jiefeng Li, Tong Chen, Ruiqi Shi, <strong>Yujing Lou</strong>, Yong-Lu Li and Cewu Lu
-              <br>
-              <br>
-              <strong>Thirty-Fifth Conference on Neural Information Processing Systems (NeurIPS), 2021</strong>
-              <br>
-              [<a href="https://arxiv.org/abs/2110.08825">arXiv</a>] 
-              [<a href="https://proceedings.neurips.cc/paper/2021/file/e4a6222cdb5b34375400904f03d8e6a5-Paper.pdf">paper</a>] 
-              [<a href="https://github.com/Jeff-sjtu/sampling-argmax">code</a>]
-            </td>
+        <div class="one">
+          <img src='/figs/localization.png' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle>
+          <strong> Localization with Sampling-Argmax </strong>
+        </papertitle>
+        <br>
+          Jiefeng Li, Tong Chen, Ruiqi Shi, <strong>Yujing Lou</strong>, Yong-Lu Li and Cewu Lu
+        <br>
+        <br>
+          <strong>Thirty-Fifth Conference on Neural Information Processing Systems (NeurIPS), 2021</strong>
+        <br>
+          [<a href="https://arxiv.org/abs/2110.08825">arXiv</a>] 
+          [<a href="https://proceedings.neurips.cc/paper/2021/file/e4a6222cdb5b34375400904f03d8e6a5-Paper.pdf">paper</a>] 
+          [<a href="https://github.com/Jeff-sjtu/sampling-argmax">code</a>]
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/Under.png' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Understanding Pixel-level 2D Image Semantics
-                with 3D Keypoint Knowledge Engine</papertitle>
-              <br>
-              Yang You, Chengkun Li, <strong>Yujing Lou</strong>, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Weiming Wang, Cewu Lu
-              <br>
-              <br>
-              <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021</strong>
-              <br>
-              [<a href="https://ieeexplore.ieee.org/abstract/document/9403947/">paper</a>]
-            </td>
+        <div class="one">
+          <img src='/figs/Under.png' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle>
+          <strong> Understanding Pixel-level 2D Image Semantics with 3D Keypoint Knowledge Engine </strong>
+        </papertitle>
+        <br>
+          Yang You, Chengkun Li, <strong>Yujing Lou</strong>, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Weiming Wang, Cewu Lu
+        <br>
+        <br>
+          <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2021</strong>
+        <br>
+          [<a href="https://arxiv.org/abs/2111.10817">arXiv</a>]
+          [<a href="https://ieeexplore.ieee.org/document/9403947/">paper</a>]
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='/figs/cpnet.png' width="160">
-              </div>
-            </td>
-            <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Human Correspondence Consensus for 3D Object Semantic Understanding</papertitle>
-              <br>
-              <strong>Yujing Lou*</strong>, Yang You*, Chengkun Li*, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Weiming Wang, Cewu Lu (*=equal contribution)
-              <br>
-              <br>
-              <strong>European Conference on Computer Vision (ECCV), 2020</strong>
-              <br>
-              [<a href="https://arxiv.org/abs/1912.12577">arXiv</a>]
-              [<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670494.pdf">paper</a>]
-              [<a href="https://github.com/yokinglou/CorresPondenceNet">code</a>]
-            </td>
+        <div class="one">
+          <img src='/figs/cpnet.png' width="160">
+        </div>
+      </td>
+      <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
+        <papertitle>
+          <strong> Human Correspondence Consensus for 3D Object Semantic Understanding </strong>
+        </papertitle>
+        <br>
+          <strong>Yujing Lou*</strong>, Yang You*, Chengkun Li*, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Weiming Wang, Cewu Lu (*=equal contribution)
+        <br>
+        <br>
+          <strong>European Conference on Computer Vision (ECCV), 2020</strong>
+        <br>
+          [<a href="https://arxiv.org/abs/1912.12577">arXiv</a>]
+          [<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670494.pdf">paper</a>]
+          [<a href="https://github.com/yokinglou/CorresPondenceNet">code</a>]
+      </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
       <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
@@ -133,15 +143,17 @@ Publications
         </div>
       </td>
       <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-        <papertitle>KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human Annotations</papertitle>
+        <papertitle>
+          <strong> KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human Annotations </strong>
+        </papertitle>
         <br>
-        Yang You, <strong>Yujing Lou</strong>, Chengkun Li, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Cewu Lu, Weiming Wang
+          Yang You, <strong>Yujing Lou</strong>*, Chengkun Li*, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Cewu Lu, Weiming Wang
         <br>
         <br>
-        <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</strong>
+          <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</strong>
         <br>
-        [<a href="https://arxiv.org/abs/2002.12687">arXiv</a>]
-        [<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/You_KeypointNet_A_Large-Scale_3D_Keypoint_Dataset_Aggregated_From_Numerous_Human_CVPR_2020_paper.html">paper</a>] [<a href="https://github.com/qq456cvb/KeypointNet">data</a>]
+          [<a href="https://arxiv.org/abs/2002.12687">arXiv</a>]
+          [<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/You_KeypointNet_A_Large-Scale_3D_Keypoint_Dataset_Aggregated_From_Numerous_Human_CVPR_2020_paper.html">paper</a>] [<a href="https://github.com/qq456cvb/KeypointNet">data</a>]
         </td>
     </tr> 
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
@@ -151,13 +163,17 @@ Publications
         </div>
       </td>
       <td style="border:0px;padding:20px;width:75%;vertical-align:middle">
-        <papertitle>Pointwise Rotation-invariant Network with Adaptive Sampling and 3D Spherical Voxel Convolution</papertitle>
+        <papertitle>
+          <strong> Pointwise Rotation-invariant Network with Adaptive Sampling and 3D Spherical Voxel Convolution </strong>
+        </papertitle>
         <br>
-        Yang You*, <strong>Yujing Lou</strong>*, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Cewu Lu, Weiming Wang (*=equal contribution) 
+          Yang You*, <strong>Yujing Lou</strong>*, Qi Liu, Yu-Wing Tai, Lizhuang Ma, Cewu Lu, Weiming Wang (*=equal contribution) 
         <br><br>
-        <strong>AAAI Conference on Artificial Intelligence (AAAI), 2020</strong>
+          <strong>AAAI Conference on Artificial Intelligence (AAAI), 2020</strong>
         <br>
-        [<a href="https://arxiv.org/abs/1811.09361">arXiv</a>] [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6965">paper</a>] [<a href="https://github.com/qq456cvb/PRIN">code</a>]
+          [<a href="https://arxiv.org/abs/1811.09361">arXiv</a>] 
+          [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6965">paper</a>] 
+          [<a href="https://github.com/qq456cvb/PRIN">code</a>]
         </td>
     </tr>
 </tbody>
