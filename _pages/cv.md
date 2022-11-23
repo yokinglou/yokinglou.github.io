@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-<table width="100%" align="center" border="0" cellpadding="20">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 <tbody>
   <tr>
     <td style="border:0px;padding:20px;width:25%;vertical-align:middle">
@@ -67,11 +67,11 @@ Education
 Work experience
 ======
 * Summer 2017: Research Intern
-  * National University of Singapore
+  * **National University of Singapore**
   * Supervisor: Prof. SOO Yuen Jien
 
 * 2022.01-Present: Research Intern
-  * SmartMore
+  * **SmartMore**
   * Supervisor: Dr. Nianjuan Jiang
 
 Honors and Awards

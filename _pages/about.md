@@ -26,10 +26,10 @@ Publications
           <strong>CRIN: Rotation-Invariant Point Cloud Analysis and Rotation Estimation via Centrifugal Reference Frame</strong>
         </papertitle>
         <br>
-        <strong>Yujing Lou</strong>, Zelin Ye, Yang You, Nianjuan Jiang, Jiangbo Lu, Weiming Wang, Lizhuang Ma, Cewu Lu
+          <strong>Yujing Lou</strong>, Zelin Ye, Yang You, Nianjuan Jiang, Jiangbo Lu, Weiming Wang, Lizhuang Ma, Cewu Lu
         <br>
         <br>
-        <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023</strong>
+          <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023</strong>
         <br>
       </td>
     </tr>
@@ -44,13 +44,14 @@ Publications
           <strong> Canonical Voting: Towards Robust Oriented Bounding Box Detection in 3D Scenes </strong> 
         </papertitle>
         <br>
-        Yang You, Zelin Ye, <strong>Yujing Lou</strong>, Chengkun Li, Yong-Lu Li, Lizhuang Ma, Weiming Wang, Cewu Lu
+          Yang You, Zelin Ye, <strong>Yujing Lou</strong>, Chengkun Li, Yong-Lu Li, Lizhuang Ma, Weiming Wang, Cewu Lu
         <br>
         <br>
-        <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</strong>
+          <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2022</strong>
         <br>
-        [<a href="https://arxiv.org/abs/2011.12001">arXiv</a>] 
-        [<a href="https://github.com/qq456cvb/CanonicalVoting">code</a>]
+          [<a href="https://arxiv.org/abs/2011.12001">arXiv</a>] 
+          [<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/You_Canonical_Voting_Towards_Robust_Oriented_Bounding_Box_Detection_in_3D_CVPR_2022_paper.pdf">paper</a>] 
+          [<a href="https://github.com/qq456cvb/CanonicalVoting">code</a>]
       </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
