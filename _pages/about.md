@@ -13,7 +13,6 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
 <!-- I was a member of Elite Program in <a href="http://honors.hit.edu.cn">Honors School of HIT</a> -->
 
 ## Publications
----
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
@@ -183,6 +182,5 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
 
 
 ## Public Services
----
 Reviewer:
 CVPR23, ECCV22, NeurIPS21/22 (Datasets and Benchmarks Track).
