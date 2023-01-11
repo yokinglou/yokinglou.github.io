@@ -29,7 +29,7 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
           <strong>Yujing Lou</strong>, Zelin Ye, Yang You, Nianjuan Jiang, Jiangbo Lu, Weiming Wang, Lizhuang Ma, Cewu Lu
         <br>
         <br>
-          <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023</strong>
+          <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023 (Oral)</strong>
         <br>
       </td>
     </tr>
