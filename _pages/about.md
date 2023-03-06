@@ -31,6 +31,9 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
         <br>
           <strong>AAAI Conference on Artificial Intelligence (AAAI), 2023 (Oral)</strong>
         <br>
+        [arXiv] 
+        [paper] 
+        [code]
       </td>
     </tr>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
