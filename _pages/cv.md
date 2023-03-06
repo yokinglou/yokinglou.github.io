@@ -28,7 +28,7 @@ redirect_from:
       <br><br>
       <strong>Sep. 2018 - Sep. 2020</strong>
       <br>
-      Master of Computer Science and Technology
+      Master of Engineering in Computer Science and Technology
     </td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@ redirect_from:
       <br>
       <strong>Sep. 2014 - Jun. 2018</strong>
       <br>
-      Bachelor of Engineering
+      Bachelor of Engineering in Computer Science and Technology
     </td>
   </tr>
 </tbody>
