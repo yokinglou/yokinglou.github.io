@@ -92,7 +92,7 @@ redirect_from:
   * China National Scholarship, Ministry of Education of P.R. China • 2017
   * Samsung Scholarship • 2016 
   * Selected Member of HIT Elite Program in Computer Science (Honors School of HIT) • 2015 
-  
+   
 <!-- Skills
 ======
 * Skill 1
