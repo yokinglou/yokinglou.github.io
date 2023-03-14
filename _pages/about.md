@@ -136,7 +136,7 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
           <strong>European Conference on Computer Vision (ECCV), 2020</strong>
         <br>
           [<a href="https://arxiv.org/abs/1912.12577">arXiv</a>]
-          [<a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670494.pdf">paper</a>]
+          [<a href="https://link.springer.com/chapter/10.1007/978-3-030-58542-6_30">paper</a>]
           [<a href="https://github.com/yokinglou/CorresPondenceNet">code</a>]
       </td>
     </tr>
