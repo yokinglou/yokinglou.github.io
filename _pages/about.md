@@ -176,7 +176,7 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
           <strong>AAAI Conference on Artificial Intelligence (AAAI), 2020</strong>
         <br>
           [<a href="https://arxiv.org/abs/1811.09361">arXiv</a>] 
-          [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/6965">paper</a>] 
+          [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/6965">paper</a>] 
           [<a href="https://github.com/qq456cvb/PRIN">code</a>]
         </td>
     </tr>
