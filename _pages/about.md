@@ -12,7 +12,7 @@ redirect_from:
 I am a Ph.D. candidate in the [Department of Computer Science and Engineering](http://www.cs.sjtu.edu.cn/) at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn), advised by Prof. [Cewu Lu](http://mvig.sjtu.edu.cn) and Prof. [Lizhuang Ma](http://dmcv.sjtu.edu.cn/). Before that, I obtained my B.Eng. degree (CS) from [HIT](http://en.hit.edu.cn) in 2018, and M.Eng. degree (CS) from [SJTU](http://en.sjtu.edu.cn) in 2020. My research interests include ***Computer Vision***, ***Scene/Object Understanding*** and ***Robotics***.
 <!-- I was a member of Elite Program in <a href="http://honors.hit.edu.cn">Honors School of HIT</a> -->
 
-## Publications
+## Publications 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
     <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
