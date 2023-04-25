@@ -186,5 +186,5 @@ I am a Ph.D. candidate in the [Department of Computer Science and Engineering](h
 
 ## Public Services
 ### Reviewer:
-* Conference: ICCV23, CVPR23, ECCV22, NeurIPS23 & 23/22/21(Datasets and Benchmarks Track) .
+* Conference: NeurIPS23 & 23/22/21(Datasets and Benchmarks Track), ICCV23, CVPR23, ECCV22.
 * Journal: Neurocomputing
