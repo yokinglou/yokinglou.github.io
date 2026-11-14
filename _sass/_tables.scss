@@ -36,3 +36,34 @@ td {
 tr, td, th {
   vertical-align: middle;
 }
+
+.publications {
+  display: block;
+  line-height: 1.4;
+
+  tbody {
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+
+  tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    align-items: center;
+  }
+
+  td {
+    display: block;
+    min-width: 0;
+    padding: 6px 16px;
+    border: 0;
+  }
+
+  img {
+    display: block;
+    width: 160px;
+    height: 110px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}

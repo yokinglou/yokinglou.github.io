@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yoking's Homepage"
 title_separator          : "-"
 name                     : &name "Yujing Lou 楼雨京"
-description              : &description "Ph.D. candidate at SJTU"
+description              : &description "Researcher at Token Foundary, Alibaba Token Hub"
 url                      : https://yokinglou.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yokinglou/yokinglou.github.io"
@@ -82,14 +82,14 @@ analytics:
 author:
   name             : "Yujing Lou 楼雨京"
   avatar           : "yoking.jpg"
-  bio              : "Ph.D. candidate at SJTU\nlouyujing[at]sjtu[dot]edu[dot]cn"
-  location         : "Shanghai, China"
+  bio              : "Researcher at Token Foundary, Alibaba Token Hub"
+  location         : "Hangzhou, China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   github           : "yokinglou"
   googlescholar    : "https://scholar.google.com/citations?user=3o62JHIAAAAJ&hl=en"
   email            : #"louyujing[at]sjtu[dot]edu[dot]cn"
-  researchgate     : "https://www.researchgate.net/profile/Yujing-Lou" # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0001-6292-8953"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

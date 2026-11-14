@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbff">
+  <meta name="description" content="Despa resolves spatial collapse in vision-language models by grounding visual tokens and attention in depth. NeurIPS 2026. Introducing SpaDataset and SpaBench.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Despa · Depth-Grounded Spatial Intelligence">
+  <meta property="og:description" content="Nearby in 2D. Far apart in 3D. Resolving spatial collapse in VLMs at two geometric interfaces.">
+  <meta property="og:image" content="https://yokinglou.github.io/despa/assets/architecture.webp">
+  <meta property="og:url" content="https://yokinglou.github.io/despa/">
+  <link rel="canonical" href="https://yokinglou.github.io/despa/">
+  <title>Despa: Resolving Spatial Collapse in VLMs via Depth-Grounded Geometry</title>
+  <link rel="icon" href="assets/qwen-logo.png" type="image/png" sizes="80x80">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/insight.webp" as="image">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav aria-label="Main navigation">
+        <a href="#abstract">Abstract</a><a href="#insight">Spatial Collapse</a><a href="#method">Method</a><a href="#benchmark">Benchmark</a><a href="#results">Experiments</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="paper-title">
+      <h1 id="paper-title"><span class="title-name">Despa:</span> Resolving Spatial Collapse<br class="desktop-break"> in VLMs via Depth-Grounded Geometry</h1>
+      <p class="hero-summary">Ground visual tokens in geometry.<br class="mobile-break"> Make attention aware of depth.</p>
+      <div class="venue">NeurIPS 2026</div>
+      <div class="authors" aria-label="Authors">
+        <span>Yujing Lou<sup>1,2</sup></span><span>Pingyi Chen<sup>2,3</sup></span><span>Shen Cao<sup>2</sup></span><span>Lubin Fan<sup>2,†</sup></span><span>Yue Wu<sup>2</sup></span><span>Lizhuang Ma<sup>1</sup></span><span>Jieping Ye<sup>2</sup></span>
+      </div>
+      <p class="affiliations"><span><sup>1</sup> Shanghai Jiao Tong University</span><span><sup>2</sup> Alibaba Token Hub, Alibaba Group</span><span><sup>3</sup> Zhejiang University</span></p>
+      <p class="corresponding">† Corresponding author</p>
+      <div class="resource-links" aria-label="Project resources">
+        <a class="resource-button resource-primary" data-resource="arxiv" aria-disabled="true" role="link" tabindex="0">
+          <svg class="resource-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg><span>arXiv</span><span class="release-label">Soon</span>
+        </a>
+        <a class="resource-button" data-resource="benchmark" aria-disabled="true" role="link" tabindex="0">
+          <span class="resource-icon" aria-hidden="true">🤗</span><span>SpaBench</span><span class="release-label">Soon</span>
+        </a>
+        <a class="resource-button" data-resource="github" aria-disabled="true" role="link" tabindex="0">
+          <svg class="resource-brand" viewBox="0 0 496 512" aria-hidden="true"><path transform="translate(0 448) scale(1 -1)" d="M165.9 50.6C165.9 48.6 163.6 47 160.7 47C157.4 46.7 155.1 48.3 155.1 50.6C155.1 52.6 157.4 54.2 160.3 54.2C163.3 54.5 165.9 52.9 165.9 50.6zM134.8 55.1C134.1 53.1 136.1 50.8 139.1 50.2C141.7 49.2 144.7 50.2 145.3 52.2S144 56.5 141 57.4C138.4 58.1 135.5 57.1 134.8 55.1zM179 56.8C176.1 56.1 174.1 54.2 174.4 51.9C174.7 49.9 177.3 48.6 180.3 49.3C183.2 50 185.2 51.9 184.9 53.9C184.6 55.8 181.9 57.1 179 56.8zM244.8 440C106.1 440 0 334.7 0 196C0 85.1 69.8 -9.8 169.5 -43.2C182.3 -45.5 186.8 -37.6 186.8 -31.1C186.8 -24.9 186.5 9.3 186.5 30.3C186.5 30.3 116.5 15.3 101.8 60.1C101.8 60.1 90.4 89.2 74 96.7C74 96.7 51.1 112.4 75.6 112.1C75.6 112.1 100.5 110.1 114.2 86.3C136.1 47.7 172.8 58.8 187.1 65.4C189.4 81.4 195.9 92.5 203.1 99.1C147.2 105.3 90.8 113.4 90.8 209.6C90.8 237.1 98.4 250.9 114.4 268.5C111.8 275 103.3 301.8 117 336.4C137.9 342.9 186 309.4 186 309.4C206 315 227.5 317.9 248.8 317.9S291.6 315 311.6 309.4C311.6 309.4 359.7 343 380.6 336.4C394.3 301.7 385.8 275 383.2 268.5C399.2 250.8 409 237 409 209.6C409 113.1 350.1 105.4 294.2 99.1C303.4 91.2 311.2 76.2 311.2 52.7C311.2 19 310.9 -22.7 310.9 -30.9C310.9 -37.4 315.5 -45.3 328.2 -43C428.2 -9.8 496 85.1 496 196C496 334.7 383.5 440 244.8 440zM97.2 95.1C95.9 94.1 96.2 91.8 97.9 89.9C99.5 88.3 101.8 87.6 103.1 88.9C104.4 89.9 104.1 92.2 102.4 94.1C100.8 95.7 98.5 96.4 97.2 95.1zM86.4 103.2C85.7 101.9 86.7 100.3 88.7 99.3C90.3 98.3 92.3 98.6 93 100C93.7 101.3 92.7 102.9 90.7 103.9C88.7 104.5 87.1 104.2 86.4 103.2zM118.8 67.6C117.2 66.3 117.8 63.3 120.1 61.4C122.4 59.1 125.3 58.8 126.6 60.4C127.9 61.7 127.3 64.7 125.3 66.6C123.1 68.9 120.1 69.2 118.8 67.6zM107.4 82.3C105.8 81.3 105.8 78.7 107.4 76.4C109 74.1 111.7 73.1 113 74.1C114.6 75.4 114.6 78 113 80.3C111.6 82.6 109 83.6 107.4 82.3z"/></svg><span>Code</span><span class="release-label">Soon</span>
+        </a>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="abstract" class="abstract-section container" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p>Vision-Language Models (VLMs) excel at open-world 2D perception but struggle with precise metric spatial reasoning, a key requirement for applications like autonomous driving, navigation, and embodied intelligence. We identify this as a structural limitation: images are 2D projections of the 3D world, inherently suffering from projective ambiguity, while VLM components favor semantic understanding and rely on 2D positional bias, leading to Spatial Collapse. To address this, we propose <strong>Despa</strong>, a depth-grounded spatial VLM that injects depth-based geometric information via Geometric Positional Embedding (GPE) and Depth-aware Rotational Positional Embedding (DoPE). To expose masked limitations in current benchmarks, we construct SpaDataset (1.7M QA pairs) and SpaBench (2,051 QAs), to our knowledge the largest fine-grained training corpus and benchmark suite for metric spatial reasoning. They cover three difficulty levels and ten sub-tasks across diverse settings. The fine-tuned Despa-4B model outperforms Qwen3-VL-235B-A22B and GPT-5.2 on SpaBench by 27.9 and 31.1 percentage points, respectively. With separate fine-tuning on each corresponding training dataset, Despa-4B reaches 66.3% on MSMU, 42.4% on RefSpatial-U, and 66.0% on the multi-frame VSI-Bench. Despa consistently improves LLaVA-1.5, Qwen2.5-VL, and Qwen3-VL backbones, achieving strong metric spatial reasoning with only a 4B model.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="insight" class="insight-section container" aria-labelledby="insight-title">
+      <div class="section-heading">
+        <h2 id="insight-title">Spatial Collapse</h2>
+        <p class="section-lead"><strong>Nearby in 2D can be far apart in 3D.</strong> An image flattens the world. Today's VLMs inherit that geometry: semantic tokens compress metric depth, while positional encodings treat patches close in the image as neighbors—even across a large depth gap.</p>
+      </div>
+      <figure class="insight-figure">
+        <button class="figure-zoom" data-zoom="assets/insight.webp" data-caption="Spatial collapse: nearby image patches can be far apart in the 3D scene." aria-label="Enlarge the spatial collapse figure"><img src="assets/insight.webp" width="3000" height="752" alt="A 3D room projected into a 2D image: two nearby image points lie far apart in the scene, as revealed by the depth map." fetchpriority="high"><span class="zoom-label"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg> Enlarge figure</span></button>
+        <figcaption><span class="figure-index">Spatial collapse</span> Projection loses depth. Both the token features and the attention geometry need it back.</figcaption>
+      </figure>
+      <div class="collapse-pair">
+        <article><div><h3>Token-side collapse</h3><p>Vision tokens preserve <strong>what an object is</strong>, while compressing its exact depth and physical scale.</p></div></article>
+        <article><div><h3>Position-side collapse</h3><p>Multimodal RoPE encodes <strong>time, height and width</strong>. Depth separation has no explicit positional axis.</p></div></article>
+      </div>
+      <div class="takeaway"><span class="takeaway-symbol" aria-hidden="true">↳</span><p>Bring geometry back at <strong>both interfaces.</strong></p><a href="#method" aria-label="Explore the method"><span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="method" class="section container" aria-labelledby="method-title">
+      <div class="section-heading"><h2 id="method-title">Method</h2><p class="section-lead">Despa restores geometry at two interfaces: GPE adds explicit geometric anchors to visual tokens, and DoPE introduces a depth axis to attention while preserving most of the pretrained positional structure.</p></div>
+      <div class="method-pair">
+        <article class="method-item"><div class="method-label"><span class="tag">Token features</span></div><h3>GPE <span>Ground the tokens.</span></h3><p>Geometric Positional Embedding adds a sinusoidal metric anchor to every visual token: patch depth for images, shared world coordinates for videos.</p><div class="formula" aria-label="Geometry informed token equals visual token plus a geometric positional embedding">ṽ<sub>i</sub> = v<sub>i</sub> + φ(c<sub>i</sub>)</div><p class="formula-note">Image: c<sub>i</sub> = z<sub>i</sub> <span>·</span> Video: c<sub>i</sub> = (X<sub>i</sub>, Y<sub>i</sub>, Z<sub>i</sub>)</p></article>
+        <article class="method-item"><div class="method-label"><span class="tag">Attention geometry</span></div><h3>DoPE <span>Separate in depth.</span></h3><p>Depth-aware Rotational Positional Embedding reallocates selected low-frequency RoPE channels to depth, making pairwise attention sensitive to 3D separation.</p><div class="formula" aria-label="Relative phase on selected depth channels equals the difference of log depths times omega j">Δφ<sub>j</sub> = (ln z<sub>n</sub> − ln z<sub>m</sub>) ω<sub>j</sub></div><p class="formula-note">Selected depth channels <span>·</span> Remaining RoPE channels retained</p></article>
+      </div>
+      <figure class="architecture-figure">
+        <button class="figure-zoom" data-zoom="assets/architecture.webp" data-caption="Despa architecture: geometric positional embeddings and depth-aware rotary attention." aria-label="Enlarge the Despa architecture figure"><img src="assets/architecture.webp" width="3200" height="969" alt="Despa architecture. GPE fuses depth or world coordinate embeddings with vision tokens. DoPE reallocates selected rotary channels to depth in decoder self-attention." loading="lazy"><span class="zoom-label"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg> Enlarge figure</span></button>
+        <figcaption>Geometry enters the token stream through GPE and the rotary attention through DoPE.</figcaption>
+      </figure>
+      <div class="compatibility"><span class="status-dot"></span><p>Consistent gains across <strong>LLaVA-1.5</strong>, <strong>Qwen2.5-VL</strong> and <strong>Qwen3-VL</strong>—covering three RoPE families.</p></div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="benchmark" class="benchmark-section" aria-labelledby="benchmark-title"><div class="container">
+      <div class="section-heading"><h2 id="benchmark-title">SpaDataset &amp; SpaBench</h2><p class="section-lead">SpaDataset and SpaBench test quantitative spatial reasoning that qualitative questions can leave hidden—from object dimensions to action feasibility. They cover ten tasks across three functional tiers.</p></div>
+      <dl class="data-stats"><div><dt>1.7M</dt><dd>training QA pairs</dd></div><div><dt>~5M</dt><dd>physical metric annotations</dd></div><div><dt>2,051</dt><dd>benchmark QA pairs</dd></div><div><dt>10</dt><dd>tasks across 3 tiers</dd></div></dl>
+      <div class="task-tiers">
+        <article class="tier tier-green"><div class="tier-top"><span>Perception</span><span>38%</span></div><h3>Fundamental<br> Metric Perception</h3><p>Measure a property.</p><ul><li>Scale estimation <span>510</span></li><li>Position <span>170</span></li><li>Point depth <span>100</span></li></ul></article>
+        <article class="tier tier-blue"><div class="tier-top"><span>Reasoning</span><span>40%</span></div><h3>Relational<br> Metric Reasoning</h3><p>Quantify a relation.</p><ul><li>Scale comparison <span>325</span></li><li>Reference object estimation <span>217</span></li><li>Object distance <span>170</span></li><li>Point distance <span>100</span></li></ul></article>
+        <article class="tier tier-orange"><div class="tier-top"><span>Interaction</span><span>22%</span></div><h3>Interactive<br> Metric Inference</h3><p>Plan a physical action.</p><ul><li>Route <span>170</span></li><li>Pinpoint <span>147</span></li><li>Compatibility <span>142</span></li></ul></article>
+      </div>
+      <figure class="benchmark-figure">
+        <button class="figure-zoom" data-zoom="assets/benchmark-distribution.webp" data-caption="Dataset scale and metric density (left); SpaBench task distribution across three functional tiers (right)." aria-label="Enlarge the benchmark distribution figure"><img src="assets/benchmark-distribution.webp" width="2600" height="1184" alt="Original paper figure comparing spatial dataset scale and metric density, alongside SpaBench question counts across ten tasks and three tiers." loading="lazy"><span class="zoom-label"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg> Enlarge figure</span></button>
+        <figcaption>(a) Dataset scale and metric density across spatial datasets. (b) SpaBench's 2,051 evaluation QAs across ten tasks and three functional tiers.</figcaption>
+      </figure>
+      <p class="benchmark-note">Counts are SpaBench evaluation QAs. Tier shares are rounded. Indoor and outdoor · Synthetic and real-world scenes</p>
+    </div></section>
+
+    <hr class="section-divider">
+
+    <section id="results" class="section container" aria-labelledby="results-title">
+      <div class="section-heading"><h2 id="results-title">Experiments</h2><p class="section-lead">We evaluate Despa across spatial benchmarks, component ablations, and VLM backbones. Despa-4B reaches 61.8% on SpaBench, improving over same-data Direct SFT by 5.7 percentage points.</p></div>
+      <article class="experiment-block">
+        <h3>Generalization Across Benchmarks</h3>
+        <div class="table-scroll" role="region" aria-label="Generalization across benchmarks results" tabindex="0">
+          <table class="results-table benchmark-results">
+            <caption>SpaBench and other spatial datasets · Scores (%) · Higher is better ↑</caption>
+            <thead><tr><th scope="col">Model</th><th scope="col">SpaBench Avg.</th><th scope="col">MSMU</th><th scope="col">RefSpatial-U</th><th scope="col">VSI-Bench</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Gemini-3-Pro-Preview</th><td>28.8</td><td>43.4</td><td><strong>45.3</strong></td><td>52.5</td></tr>
+              <tr><th scope="row">GPT-5.2</th><td>30.7</td><td>34.9</td><td>10.8</td><td>54.5</td></tr>
+              <tr><th scope="row">InternVL3.5-241B-A28B</th><td>28.7</td><td>34.1</td><td>11.7</td><td><strong>69.5</strong></td></tr>
+              <tr><th scope="row">InternVL3.5-8B</th><td>28.7</td><td>34.7</td><td>3.0</td><td>56.1</td></tr>
+              <tr><th scope="row">Qwen3-VL-235B-A22B</th><td>33.9</td><td>43.9</td><td>11.7</td><td>62.7</td></tr>
+              <tr><th scope="row">Qwen3-VL-8B</th><td>28.8</td><td>43.3</td><td>23.4</td><td>57.9</td></tr>
+              <tr><th scope="row">Cambrian-S</th><td>20.6</td><td>—</td><td>—</td><td>62.9</td></tr>
+              <tr><th scope="row">SenseNova-SI-1.1-Qwen3-VL-8B</th><td>25.8</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr class="baseline-row"><th scope="row">Direct SFT (4B)</th><td>56.1</td><td>62.6</td><td>31.2</td><td>62.4</td></tr>
+              <tr class="highlight"><th scope="row">Despa-4B</th><td>61.8</td><td>66.3</td><td>42.4</td><td>66.0</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="experiment-note">Qwen3-VL-4B Direct SFT and Despa use matching training data and are tuned separately for each benchmark. A dash indicates an unreported result.</p>
+      </article>
+      <div class="experiment-pair">
+        <article class="experiment-block">
+          <h3>GPE and DoPE Are Complementary</h3>
+          <div class="table-scroll" role="region" aria-label="GPE and DoPE component ablation results" tabindex="0">
+            <table class="results-table ablation-results">
+              <caption>SpaBench average: 61.8% · +5.7 pp vs. SFT</caption>
+              <thead><tr><th scope="col">Setting</th><th scope="col">SpaBench ↑</th><th scope="col">VSI-Bench ↑</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Direct SFT</th><td>56.1</td><td>62.4</td></tr>
+                <tr><th scope="row">SFT + GPE</th><td>58.4</td><td>64.9</td></tr>
+                <tr><th scope="row">SFT + DoPE</th><td>58.8</td><td>63.9</td></tr>
+                <tr class="highlight"><th scope="row">SFT + GPE + DoPE</th><td>61.8</td><td>66.0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="experiment-note">Same data and backbone per benchmark. pp = percentage points.</p>
+        </article>
+        <article class="experiment-block">
+          <h3>Across VLM Backbones</h3>
+          <div class="table-scroll" role="region" aria-label="Results across VLM backbones" tabindex="0">
+            <table class="results-table backbone-results">
+              <caption>Scores (%) · SFT → Despa</caption>
+              <thead><tr><th scope="col">Backbone</th><th scope="col">SpaBench</th><th scope="col">VSI-Bench</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">LLaVA-1.5-7B</th><td>33.2 → 35.5 <span class="gain">(+2.3)</span></td><td>—</td></tr>
+                <tr><th scope="row">Qwen2.5-VL-7B</th><td>51.7 → 53.6 <span class="gain">(+1.9)</span></td><td>52.9 → 54.7 <span class="gain">(+1.8)</span></td></tr>
+                <tr><th scope="row">Qwen3-VL-8B</th><td>54.9 → 57.9 <span class="gain">(+3.0)</span></td><td>61.5 → 64.3 <span class="gain">(+2.8)</span></td></tr>
+                <tr class="highlight"><th scope="row">Qwen3-VL-4B</th><td>56.1 → 61.8 <span class="gain">(+5.7)</span></td><td>62.4 → 66.0 <span class="gain">(+3.6)</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="experiment-note">Same training data within each SFT → Despa comparison. Parentheses show gains in percentage points.</p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="citation-section container" aria-labelledby="citation-title">
+      <div class="citation-heading"><h2 id="citation-title">Citation</h2><button id="copy-citation" class="copy-button" type="button"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="7" y="7" width="10" height="11" rx="1"/><path d="M12 7V2H2v11h5"/></svg><span>Copy BibTeX</span></button></div>
+      <pre><code id="bibtex">@inproceedings{lou2026despa,
+  title     = {Despa: Resolving Spatial Collapse in VLMs via Depth-Grounded Geometry},
+  author    = {Lou, Yujing and Chen, Pingyi and Cao, Shen and Fan, Lubin and Wu, Yue and Ma, Lizhuang and Ye, Jieping},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026}
+}</code></pre>
+    </section>
+  </main>
+  <footer class="site-footer container"><p>Despa · NeurIPS 2026</p></footer>
+  <dialog id="figure-dialog" aria-label="Enlarged research figure"><div class="dialog-toolbar"><a id="dialog-original" target="_blank" rel="noopener">Open original ↗</a><button type="button" id="close-dialog" aria-label="Close enlarged figure">Close <span aria-hidden="true">×</span></button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div><p id="dialog-caption"></p></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
