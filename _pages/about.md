@@ -16,6 +16,28 @@ I am a researcher at Token Foundary, Alibaba Token Hub. I am also a postdoctoral
 
 My research focuses on **Multimodal Large Language Models**, **Spatial Intelligence**, and **Physical AI**. I am particularly interested in how multimodal models can develop spatial understanding and use it to reason about and interact with the physical world.
 
+## Projects
+<table class="projects" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td>
+        <div class="one">
+          <a href="https://d2i-ai.github.io/SpatialAxiom/" aria-label="SpatialAxiom project homepage">
+            <img src="/figs/spatialaxiom.png" alt="SpatialAxiom project title" width="160">
+          </a>
+        </div>
+      </td>
+      <td>
+        <strong>SpatialAxiom</strong>
+        <br>
+          An Open Spatial Intelligence Model for General Spatial Reasoning
+        <br>
+          [<a href="https://d2i-ai.github.io/SpatialAxiom/">project</a>]
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Publications 
 <table class="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
   <tbody>
@@ -42,7 +64,7 @@ My research focuses on **Multimodal Large Language Models**, **Spatial Intellige
     <tr>
       <td>
         <div class="one">
-          <img src="/figs/mm-opd.jpg" alt="MM-OPD teaser" width="160">
+          <img src="/figs/mm-opd.jpg" alt="MM-OPD method overview (Figure 4)" width="160">
         </div>
       </td>
       <td>
@@ -79,7 +101,7 @@ My research focuses on **Multimodal Large Language Models**, **Spatial Intellige
     <tr>
       <td>
         <div class="one">
-          <img src="/figs/sketch-in-latents.png" alt="Sketch-in-Latents teaser" width="160">
+          <img src="/figs/sketch-in-latents.png" alt="Sketch-in-Latents method overview (Figure 2)" width="160">
         </div>
       </td>
       <td>
@@ -259,7 +281,7 @@ My research focuses on **Multimodal Large Language Models**, **Spatial Intellige
           <strong> KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human Annotations </strong>
         </papertitle>
         <br>
-          Yang You, <strong>Yujing Lou</strong>*, Chengkun Li*, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Cewu Lu, Weiming Wang
+          Yang You, <strong>Yujing Lou</strong>, Chengkun Li, Zhoujun Cheng, Liangwei Li, Lizhuang Ma, Cewu Lu, Weiming Wang
         <br>
           <strong>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020</strong>
         <br>
